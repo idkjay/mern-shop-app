@@ -6,7 +6,7 @@ import './ProductList.css';
 const ProductList = props => {
   let content;
   if (!props.items || props.items.length === 0) {
-    content = <p>Could not find any products. Maybe create one?</p>;
+    content = <p>No products available. Please add to the list.</p>;
   } else {
     content = (
       <ul className="product-list">
